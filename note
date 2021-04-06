@@ -1,0 +1,8 @@
+Set-ExecutionPolicy Unrestricted -Scope Process
+env/Scripts/activate
+
+set FLASK_APP=hello.py
+set FLASK_DEBUG=1
+$env:FLASK_APP = "hello.py"
+$env:FLASK_DEBUG = 1
+flask run
